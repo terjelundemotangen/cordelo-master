@@ -28,7 +28,7 @@ include_once( get_stylesheet_directory() . '/lib/output.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Cordelo master' );
 define( 'CHILD_THEME_URL', 'https://cordelo.com/' );
-define( 'CHILD_THEME_VERSION', '2.0.0' );
+define( 'CHILD_THEME_VERSION', '2.0.1' );
 
 //* Enqueue Scripts and Styles
 add_action( 'wp_enqueue_scripts', 'cordelo_enqueue_scripts_styles' );
@@ -80,7 +80,7 @@ add_image_size( 'featured-image', 720, 400, TRUE );
 add_theme_support( 'genesis-menus' , array( 'primary' => __( 'After Header Menu', 'cordelo' ), 'secondary' => __( 'Footer Menu', 'cordelo' ) ) );
 
 // Removes secondary sidebar
-//unregister_sidebar( 'sidebar-alt' );
+unregister_sidebar( 'sidebar-alt' );
 
 // Removes site layouts
 genesis_unregister_layout( 'content-sidebar-sidebar' );
