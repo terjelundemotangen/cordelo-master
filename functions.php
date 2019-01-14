@@ -238,7 +238,7 @@ function crunchify_show_post_thumbnail_column($crunchify_columns, $crunchify_id)
 add_theme_support( 'post-thumbnails' );
 
 // Add theme widget area
-include_once( get_stylesheet_directory() . '/includes/widget-areas.php' );
+include_once( get_stylesheet_directory() . '/inc/widget-areas.php' );
 
 // Customize the post header
 //add_filter('genesis_post_info', 'wpt_info_filter');
