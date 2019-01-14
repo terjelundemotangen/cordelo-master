@@ -25,6 +25,15 @@ require_once( get_stylesheet_directory() . '/lib/customize.php' );
 //* Include Customizer CSS
 include_once( get_stylesheet_directory() . '/lib/output.php' );
 
+// Adds WooCommerce support
+require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php';
+
+// Adds the required WooCommerce styles and Customizer CSS
+require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.php';
+
+// Adds the Genesis Connect WooCommerce notice
+require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
+
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Cordelo master' );
 define( 'CHILD_THEME_URL', 'https://cordelo.com/' );
